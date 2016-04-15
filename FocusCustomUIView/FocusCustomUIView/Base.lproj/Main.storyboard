@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FocusCustomUIView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1001" height="563"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Q4-ef-zZd">
+                                <rect key="frame" x="411" y="529" width="180" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Three"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lO1-hp-vfZ">
+                                <rect key="frame" x="403" y="73" width="195" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="TGf-Um-cgv"/>
+                                    <constraint firstAttribute="width" constant="195" id="q1h-zc-aB1"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="One"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLG-Vs-KRm" customClass="Button" customModule="FocusCustomUIView" customModuleProvider="target">
+                                <rect key="frame" x="403" y="393" width="195" height="86"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="06n-qK-fje"/>
+                                    <constraint firstAttribute="width" constant="195" id="gvJ-SO-Q8H"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XY9-rT-GyE" customClass="ImageButton" customModule="FocusCustomUIView" customModuleProvider="target">
+                                <rect key="frame" x="359" y="209" width="285" height="137"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" image="Two"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VLG-Vs-KRm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6ll-8e-kJY"/>
+                            <constraint firstItem="XY9-rT-GyE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DRu-2w-EuR"/>
+                            <constraint firstItem="VLG-Vs-KRm" firstAttribute="top" secondItem="XY9-rT-GyE" secondAttribute="bottom" constant="47" id="EXU-Om-Dg3"/>
+                            <constraint firstItem="6Q4-ef-zZd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GbC-ym-lJY"/>
+                            <constraint firstItem="lO1-hp-vfZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="Soi-jH-Ie9"/>
+                            <constraint firstItem="XY9-rT-GyE" firstAttribute="top" secondItem="lO1-hp-vfZ" secondAttribute="bottom" constant="50" id="dcw-lo-0cr"/>
+                            <constraint firstItem="6Q4-ef-zZd" firstAttribute="top" secondItem="VLG-Vs-KRm" secondAttribute="bottom" constant="50" id="lKG-qD-NoB"/>
+                            <constraint firstItem="lO1-hp-vfZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ork-7G-m5R"/>
+                            <constraint firstItem="lO1-hp-vfZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="73" id="tie-zn-uxi"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1001" height="563"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Two" width="205" height="97"/>
+    </resources>
+</document>
