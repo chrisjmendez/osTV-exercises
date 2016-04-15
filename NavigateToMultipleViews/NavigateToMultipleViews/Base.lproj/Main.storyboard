@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="NavigateToMultipleViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1001" height="563"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ob-RH-Zcw">
+                                <rect key="frame" x="358" y="50" width="286" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Go to About"/>
+                                <connections>
+                                    <segue destination="li7-PB-IKc" kind="show" id="a8D-zi-cVk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3ob-RH-Zcw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="STU-y7-ijZ"/>
+                            <constraint firstItem="3ob-RH-Zcw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="thI-Iv-kWe"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1001" height="563"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300.5" y="1182.5"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="4wp-47-Ia2">
+            <objects>
+                <viewController title="Settings" id="LTi-7L-VxN" customClass="ViewController" customModule="NavigateToMultipleViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gNq-43-Fxm"/>
+                        <viewControllerLayoutGuide type="bottom" id="hSL-tk-xIq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="boM-l0-Vxx">
+                        <rect key="frame" x="0.0" y="0.0" width="1001" height="563"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrJ-84-HKe">
+                                <rect key="frame" x="358" y="195" width="286" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Go to About"/>
+                                <connections>
+                                    <segue destination="Iak-T7-jbK" kind="show" id="EYR-Rg-sKq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DrJ-84-HKe" firstAttribute="top" secondItem="gNq-43-Fxm" secondAttribute="bottom" constant="50" id="KC5-kN-reW"/>
+                            <constraint firstItem="DrJ-84-HKe" firstAttribute="centerX" secondItem="boM-l0-Vxx" secondAttribute="centerX" id="XWT-60-vq5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YBz-ci-qXc"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1001" height="563"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mpj-Uv-DHf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521.5" y="1889.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BKj-PN-IUM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="li7-PB-IKc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1001" height="563"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Eex-Ei-Xip">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LTi-7L-VxN" kind="relationship" relationship="rootViewController" id="alp-qr-WJG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WU8-7Z-gsp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311.5" y="1880.5"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="FUU-xa-Tfb">
+            <objects>
+                <viewController title="About" id="Iak-T7-jbK" customClass="ViewController" customModule="NavigateToMultipleViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ybB-qr-mpS"/>
+                        <viewControllerLayoutGuide type="bottom" id="yem-Hc-vco"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2HW-M3-jq5">
+                        <rect key="frame" x="0.0" y="0.0" width="1001" height="563"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="u7M-zg-iPg"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1001" height="563"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wBI-oY-9NZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2697.5" y="1889.5"/>
+        </scene>
+    </scenes>
+</document>
